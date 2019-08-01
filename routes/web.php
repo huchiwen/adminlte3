@@ -12,6 +12,11 @@
 */
 
 Route::get('/', function () {
+    return view('welcome');
+    //return 'hello';
+});
+
+Route::get('/hello', function () {
     //return view('welcome');
-    return 'hello';
+    return app()::VERSION;
 });
