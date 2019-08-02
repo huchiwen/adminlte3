@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6344c44-1f47-4369-be9b-17181f4b3f84" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/indexs.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/indexs.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,9 +49,12 @@
       <file leaf-file-name="indexs.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/indexs.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="119" column="35" lean-forward="true" selection-start-line="119" selection-start-column="35" selection-end-line="119" selection-end-column="35" />
-              <folding />
+            <state relative-caret-position="373">
+              <caret line="164" column="69" lean-forward="true" selection-start-line="164" selection-start-column="69" selection-end-line="164" selection-end-column="69" />
+              <folding>
+                <element signature="e#7310#7316#0#HTML" expanded="true" />
+                <element signature="e#7316#7322#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -284,15 +285,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564669337987</updated>
-      <workItem from="1564669339309" duration="13556000" />
+      <workItem from="1564669339309" duration="18958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13556000" />
+    <option name="totallyTimeSpent" value="18958000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="725" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1005" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -302,12 +303,12 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17528272" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.115548454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3982103" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -325,7 +326,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
-    <watches-manager />
+    <watches-manager>
+      <configuration name="JavascriptDebugType">
+        <watch expression=" &lt;table class=&quot;box-body table-responsive no-padding&quot;&gt;&#10;                                               &lt;tbody class=&quot;table table-hover&quot;&gt;&#10;                                                    &lt;tr&gt;&#10;                                                        &lt;th class=&quot;text-center&quot; width=&quot;100px&quot;&gt;ID&lt;/th&gt;&#10;                                                        &lt;th&gt;用户名&lt;/th&gt;&#10;                                                        &lt;th&gt;用户权限&lt;/th&gt;&#10;                                                        &lt;th&gt;最后登录IP&lt;/th&gt;&#10;                                                        &lt;th&gt;最后登录时间&lt;/th&gt;&#10;                                                        &lt;th&gt;注册时间&lt;/th&gt;&#10;                                                        &lt;th&gt;注册IP&lt;/th&gt;&#10;                                                        &lt;th&gt;登录次数&lt;/th&gt;&#10;                                                        &lt;th&gt;登录状态&lt;/th&gt;&#10;                                                        &lt;th&gt;操&amp;nbsp;&amp;nbsp;作&lt;/th&gt;&#10;                                                    &lt;/tr&gt;&#10;                                               &lt;/tbody&gt;&#10;                                           &lt;/table&gt;" />
+        <watch expression=" &lt;tbody class=&quot;table table-hover&quot;&gt;&#10;                                    &lt;tr&gt;&#10;                                        &lt;th class=&quot;text-center&quot; width=&quot;100px&quot;&gt;ID&lt;/th&gt;&#10;                                        &lt;th&gt;用户名&lt;/th&gt;&#10;                                        &lt;th&gt;用户权限&lt;/th&gt;&#10;                                        &lt;th&gt;最后登录IP&lt;/th&gt;&#10;                                        &lt;th&gt;最后登录时间&lt;/th&gt;&#10;                                        &lt;th&gt;注册时间&lt;/th&gt;&#10;                                        &lt;th&gt;注册IP&lt;/th&gt;&#10;                                        &lt;th&gt;登录次数&lt;/th&gt;&#10;                                        &lt;th&gt;登录状态&lt;/th&gt;&#10;                                        &lt;th&gt;操&amp;nbsp;&amp;nbsp;作&lt;/th&gt;&#10;                                    &lt;/tr&gt;&#10;                                    &lt;/tbody&gt;" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/bootstrap/app.php">
@@ -554,9 +560,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/indexs.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="119" column="35" lean-forward="true" selection-start-line="119" selection-start-column="35" selection-end-line="119" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="373">
+          <caret line="164" column="69" lean-forward="true" selection-start-line="164" selection-start-column="69" selection-end-line="164" selection-end-column="69" />
+          <folding>
+            <element signature="e#7310#7316#0#HTML" expanded="true" />
+            <element signature="e#7316#7322#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
