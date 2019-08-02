@@ -11,12 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-    //return 'hello';
-});
 
-Route::get('/hello', function () {
-    //return view('welcome');
-    return app()::VERSION;
-});
+Route::get('/admin/index','Admin\IndexsController@index');  //后台登陆页面
+
