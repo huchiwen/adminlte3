@@ -1,0 +1,33 @@
+/*
+    样式是自己写的
+*/
+
+.table_title {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fff;
+    border-color: #e7eaec;
+    -webkit-border-image: none;
+    -o-border-image: none;
+    border-image: none;
+    /*border-style: solid solid none;*/
+    border-width: 4px 0 0;
+    color: inherit;
+    margin-bottom: 0;
+    padding: 14px 15px 7px;
+    min-height: 48px;
+}
+.box-body {
+    padding: 15px 20px 20px;
+    border-color:#e7eaec;
+    border-style:solid solid none;
+    border-width: 1px 0;
+    padding-left: 10px;
+}
+.box-header h3{
+    font-size: 25px;
+    padding-left: 0px;
+}
+

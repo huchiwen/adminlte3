@@ -13,4 +13,6 @@
 
 
 Route::get('/admin/index','Admin\IndexsController@index');  //后台登陆页面
+Route::resource('/admin/admin','Admin\AdminsController',['only' => ['index', 'create', 'store', 'update', 'edit']]); //管理员
+
 
