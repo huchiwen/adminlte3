@@ -9,7 +9,7 @@
                     </div>
 
                     <div class="box-body">
-                        <a class="btn btn-primary btn-sm" href="#">管理员添加</a>
+                        <a class="btn btn-primary btn-sm" href="{{route('admin.create')}}">管理员添加</a>
                         <a class="btn btn-primary btn-sm" href="javascript:history.go(-1)">返回</a>
                     </div>
 

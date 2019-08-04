@@ -28,6 +28,27 @@
 }
 .box-header h3{
     font-size: 25px;
-    padding-left: 0px;
+    padding-left: 3px;
+}
+.box-header h5{
+    font-size: 20px;
+    padding-left:3px;
 }
 
+
+.hr-line-dashed{
+    border: 1px dashed #e7eaec;
+}
+
+.m-b-sm{
+    margin-bottom: 10px;
+}
+.m-t-sm{
+    margin-top: 10px;
+}
+.input-group{
+    display: table;
+}
+.form-control{
+    width: 30%;
+}
