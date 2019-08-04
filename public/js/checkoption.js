@@ -1,3 +1,0 @@
-$('#checkoption').click(function(){
-
-});

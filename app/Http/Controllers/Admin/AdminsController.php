@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 
-class AdminsController extends Controller
+class AdminController extends Controller
 {
     public function index()
     {
@@ -11,6 +11,10 @@ class AdminsController extends Controller
     public function create()
     {
         return view('admin.create');
+    }
+
+    public function store(){
+        dd('store');
     }
 
 }
