@@ -54,8 +54,10 @@ desired effect
 -->
 <!--skin-green sidebar-mini wysihtml5-supported ,hold-transition skin-blue sidebar-mini-->
 <body class="hold-transition skin-blue sidebar-mini">
+
 <div class="wrapper">
-    <!-- Main Header -->
+
+<!-- Main Header -->
     <header class="main-header">
 
         <!-- Logo -->
@@ -105,7 +107,16 @@ desired effect
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <!-- Main content -->
-            @yield('content')
+        @if (count($errors) > 0)
+            <div class="alert alert-warning">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+        @yield('content')
     <!-- /.content -->
     </div>
 
@@ -210,7 +221,12 @@ desired effect
 <script src="/js/adminlte.min.js"></script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
-     Both of these plugins are recommended to enhance the
-     user experience. -->
+Both of these plugins are recommended to enhance the
+user experience. -->
+
+<!--显示错误信息，需要下面代码隐藏，110-118 代码配合一起用--->
+<script>
+    $('div.alert').not('.alert-important').delay(3000).fadeOut(350);
+</script>
 </body>
 </html>

@@ -3,6 +3,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Services\AdminService;
+use App\Requests\AdminRequest;
 
 class AdminsController extends Controller
 {
@@ -23,11 +24,16 @@ class AdminsController extends Controller
         return view('admin.create');
     }
 
-    public function store()
+    public function store(AdminRequest $request)
     {
-       //管理员添加逻辑
-        $this->adminservices->create($req);
+        //管理员添加逻辑
+        $this->adminservices->create($request);
 
+    }
+
+    public function show($id)
+    {
+        //dd($id);
     }
 
 }
