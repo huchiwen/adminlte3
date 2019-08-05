@@ -28,6 +28,9 @@ class AdminsController extends Controller
     {
         //管理员添加逻辑
         $this->adminservices->create($request);
+        //下面代码需要用 composer 加载第三方才可以正常使用【https://github.com/laracasts/flash】
+        flash('添加管理员成功')->success()->important();
+        return redirect()->route('admin.index');
 
     }
 

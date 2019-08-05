@@ -116,7 +116,8 @@ desired effect
                 </ul>
             </div>
         @endif
-        @yield('content')
+    @include('flash::message')
+    @yield('content')
     <!-- /.content -->
     </div>
 
@@ -220,13 +221,15 @@ desired effect
 <!-- AdminLTE App -->
 <script src="/js/adminlte.min.js"></script>
 
+
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
 Both of these plugins are recommended to enhance the
 user experience. -->
 
-<!--显示错误信息，需要下面代码隐藏，110-118 代码配合一起用--->
+<!--显示错误信息，需要下面代码隐藏，110-118 行代码配合一起用--->
 <script>
     $('div.alert').not('.alert-important').delay(3000).fadeOut(350);
 </script>
+
 </body>
 </html>

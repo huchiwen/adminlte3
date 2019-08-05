@@ -13,6 +13,10 @@ class AdminRequest extends FormRequest {
     {
         return [
             'username' =>'required',
+            'password' =>'required',
+            'role_id'  => 'required:integer',
+            'status'   => 'required:integer',
+
         ];
     }
 
@@ -25,6 +29,9 @@ class AdminRequest extends FormRequest {
     {
         return [
             'username.required' => '用户名不能为空',
+            'password.required' => '密码名不能为空',
+            'role_id.required' => '所属角色不能为空',
+            'status.required' =>'状态只必须为整数',
         ];
     }
 }

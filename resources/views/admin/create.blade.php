@@ -36,19 +36,19 @@
                                 <div class="form-group">
                                     <label for="inputEmail3" class="col-sm-2 control-label">头像:</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" name="avatr" type="file">
+                                        <input class="form-control" name="avatrs" type="file">
                                     </div>
                                 </div>
                                 <div class="hr-line-dashed m-t-sm m-b-sm"></div>
                                 <div class="form-group">
                                     <label for="inputEmail3" class="col-sm-2 control-label">所属角色:</label>
                                     <div class="form-check">
-                                        <input type="checkbox" name="role[]" class="form-check-input" id="Check1">
+                                        <input type="checkbox" name="role_id[]" value="1" class="form-check-input" id="Check1">
                                         <label class="form-check-label" for="Check1">&nbsp;超级管理员</label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" name="role[]" class="form-check-input" id="Check2">
+                                        <input type="checkbox" name="role[]" value="2" class="form-check-input" id="Check2">
                                         <label class="form-check-label" for="Check2">&nbsp;管理员</label>
                                     </div>
                                     <div class="hr-line-dashed m-t-sm m-b-sm"></div>

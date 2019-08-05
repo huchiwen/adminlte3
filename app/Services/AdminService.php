@@ -1,18 +1,21 @@
 <?php
 namespace App\Services;
 
-use App\Handles\ImageUploadHandler;
-
+use App\Handlers\ImageUploadHandler;
+use Illuminate\Support\Facades\Hash;
+use App\Repositories\AdminsRepository;
 class AdminService {
 
-    protected  $uploader ;
+    protected  $uploader;
+    protected  $adminsRepository;
 
-    public function __construc(ImageUploadHandler $imageUploadHandler)
+    public function __construct(ImageUploadHandler $imageUploadHandler,AdminsRepository $adminsRepository)
     {
         $this->uploader = $imageUploadHandler;
+        $this->adminsRepository = $adminsRepository;
     }
     /**
-     * 创建管理员数据
+     * 创建管理员
      * @param $request
      * @return mixed
      */
@@ -22,7 +25,7 @@ class AdminService {
         //上传头像
         if ($request->avatr) {
             $result = $this->uploader->save($request->avatr, 'avatrs');
-            dd($result);
+            //dd($result);
             if ($result) {
                 $datas['avatr'] = $result['path'];
             }
@@ -32,11 +35,13 @@ class AdminService {
         $datas['create_ip'] = $request->ip();
         $datas['last_login_ip'] = $request->ip();
 
-        $admin = $this->adminsRepository->create($datas);
+        //dd($this->adminsRepository);不知道为什么会null 找到原因了 是构造函数没有写全
+        $admin = $this->adminsRepository->add($datas);
 
         //插入模型关联数据
+        //dd($request->role_id);
+        //dd($admin->roles());
         $admin->roles()->attach($request->role_id);
-
         return $admin;
     }
 }
