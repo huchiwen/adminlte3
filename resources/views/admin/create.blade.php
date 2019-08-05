@@ -14,12 +14,13 @@
 
                         <div class="hr-line-dashed m-t-sm m-b-sm"></div>
 
-                        <form action="" class="form-horizontal" method="post">
+                        <form action="{{route('admin.store')}}" class="form-horizontal" method="post">
+                            {!! csrf_field() !!}
                             <div class="box-body">
                                 <div class="form-group">
                                     <label for="inputEmail3" class="col-sm-2 control-label">用户名:</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" id="" placeholder="" type="text">
+                                        <input class="form-control" name="username" placeholder="" type="text">
                                     </div>
                                 </div>
                                 <div class="hr-line-dashed m-t-sm m-b-sm"></div>
@@ -27,7 +28,7 @@
                                 <div class="form-group">
                                     <label for="inputEmail3" class="col-sm-2 control-label">密码:</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" id="" placeholder="" type="password">
+                                        <input class="form-control" name="password" placeholder="" type="password">
                                     </div>
                                 </div>
                                 <div class="hr-line-dashed m-t-sm m-b-sm"></div>
@@ -35,20 +36,19 @@
                                 <div class="form-group">
                                     <label for="inputEmail3" class="col-sm-2 control-label">头像:</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" id="" placeholder="" type="file">
+                                        <input class="form-control" name="avatr" type="file">
                                     </div>
                                 </div>
                                 <div class="hr-line-dashed m-t-sm m-b-sm"></div>
-
                                 <div class="form-group">
                                     <label for="inputEmail3" class="col-sm-2 control-label">所属角色:</label>
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="Check1">
+                                        <input type="checkbox" name="role[]" class="form-check-input" id="Check1">
                                         <label class="form-check-label" for="Check1">&nbsp;超级管理员</label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="Check2">
+                                        <input type="checkbox" name="role[]" class="form-check-input" id="Check2">
                                         <label class="form-check-label" for="Check2">&nbsp;管理员</label>
                                     </div>
                                     <div class="hr-line-dashed m-t-sm m-b-sm"></div>
@@ -71,8 +71,6 @@
                             </div>
 
                         </form>
-
-
                     </div>
             </div>
     </div>
